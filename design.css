@@ -1,24 +1,43 @@
+/*background-color: #244930;
+*/
+
 *{
     margin: 0;
-    background-color: #244930;
-    
-}
-nav{
-    
-    color: red;
-    position: fixed;
-    width: 100%;
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-    letter-spacing: .1vh;
-    height: 5vh;
-   
-}
-header a{
+    background-color: #404340;
     color: white;
-    text-decoration: none
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    margin-bottom: 20px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    
 }
 main{
-    
+    display: flex;
+    padding: 1em
+}
+#overview{
+    background-color: aliceblue;
+    background-image: url(./pics/overview.jpeg);
+    width: 300px;
+    height: 200px;
+    background-size: 100%;
+   
+}
+
+footer{
+    height: 500px;
+}
+
+.logo{
+    background-image: url(./pics/logo.jpg);
+    width: 300px;
+
 }
