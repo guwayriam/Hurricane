@@ -1,22 +1,72 @@
-/*background-color: #244930;
+/*;
+background-color: #404340;
 */
 
 *{
     margin: 0;
-    background-color: #404340;
+    background-color: #151a18;
     color: white;
+    background-color: black;
     
+}
+body {
+    background-color: #EAEAEA;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-image: linear-gradient(#FFFFFF, #90C7E3); */
+}
+.container{
+    background-color: black;
+    width: 80%;
+    margin: auto;
+    margin-right: auto;
+    box-shadow: 3px 3px #333333;
+    background-color: #1e4a2f;
+    border: solid 1px #6d928b;
 }
 header{
     display: flex;
+    background-color: #005D42;
     justify-content: space-between;
     align-items: center;
     padding: 1em;
     margin-bottom: 20px;
+    box-shadow: 3px 3px #083211;
+    text-shadow: 1px 1px 0 #083211;
+}
+.logo-container{
+    
+    margin-top: 20px;
+    background-image: url(pics/wave.png);
+    width: 100px;
+    height : 75px;
+    color: white;
+    background-color: #005D42;
+    background-repeat: no-repeat;
+    padding:0;
+
+    
+}
+.facts{
+    width: 50%;
+    margin: 1em;
+}
+h1{
+    background-color: #005D42;
+    padding: 0;
+}
+nav{
+   
+    background-color: #005D42;
+}
+a:hover{
+    color: rgb(176, 198, 76);
 }
 nav a {
+    background-color: #005D42;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    
     
 }
 main{
@@ -26,7 +76,8 @@ main{
 #overview{
     background-color: aliceblue;
     background-image: url(./pics/overview.jpeg);
-    width: 300px;
+    min-width: 300px;
+    max-width: 50%;
     height: 200px;
     background-size: 100%;
    
@@ -36,8 +87,25 @@ footer{
     height: 500px;
 }
 
-.logo{
-    background-image: url(./pics/logo.jpg);
-    width: 300px;
+@media (max-width: 600px) {
+    .container{
+        display: grid;
+        grid-template:
+            "header header"
+            "main main"
+            "footer footer" /180px 1fr;
 
+    }
 }
+@media (max-width: 1024px){
+    .container{
+        display: grid;
+        grid-template:
+            "header header"
+            "nav hero"
+            "nav main"
+            "nav footer" /180px 1fr;
+
+    }
+}
+
